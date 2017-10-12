@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Michelle's Udacity Notes</title>
+  <link rel="stylesheet" href="notes-style.css">
+  <!--These are high-level notes for the HTML & CSS lessons of Udacity's Intro to Programming Nanodegree (IPND)-->
 </head>
 
 <body>
   <!--Headline for notes-->
-  <div>
+  <div id=headline>
     <h1>Udacity Intro to Programming Nanodegree Notes</h1>
   </div>
   <!--Start using divs to split up topics-->
   <!--Div for topic 1 to separate it as a sub-headline-->
-  <div>
+  <div class=topic>
     <h3>Topic 1: Understanding Basics of Technology/Web</h3>
     <h4>Date: 2017 October 4</h4>
   </div>
   <!--Div for sub-topics-->
   <div>
-    <h4>How does the Web Work?</h4>
+    <h4 class=sub-topic>How does the Web Work?</h4>
     <p>
       The user accesses the web by opening the browser, a software application that runs on computers. This application will display various files (i.e. plain text, HTML (hypertext markup language), images, videos, and music).
     </p>
@@ -27,7 +30,7 @@
   </div>
   <!--Div for sub-topics-->
   <div>
-    <h4>HTML Fundamentals</h4>
+    <h4 class=sub-topic>HTML Fundamentals</h4>
     <p>
       <span>Typically, HTML elements will have an <b>opening</b> and <b>closing</b> tag with content in between the tags.</span><br>
       <span>Some HTML elements will contain one or more <b>attributes</b> in the opening tag that indicate other characteristics of the HTML element.</span>
@@ -37,13 +40,13 @@
     </p>
   </div>
   <!--Div for topic 2 to separate it as a sub-headline-->
-  <div>
+  <div class=topic>
     <h3>Topic 2: How to Create a Structured Document using HTML</h3>
     <h4>Date: 2017 October 9</h4>
   </div>
   <!--Div for sub-topics-->
   <div>
-    <h4>Find Developer Tools in Browser</h4>
+    <h4 class=sub-topic>Find Developer Tools in Browser</h4>
     <p>
       In the Google Chrome browser, you can open the developer tool, by selecting <em>View</em> from the toolbar. On View's drop-down, select <em>Developer</em> and pick the <em>Developer Tools</em> option.
     </p>
@@ -53,7 +56,7 @@
   </div>
   <!--Div for sub-topics-->
   <div>
-    <h4>Document Structure Imitates Tree</h4>
+    <h4 class=sub-topic>Document Structure Imitates Tree</h4>
     <p>
       HTML is organized in a Document Object Model(DOM) tree. This tree structure can be applied to multiple languages and across platforms to represent and interact with objects in HTML (and other markup languages).
     </p>
@@ -62,14 +65,37 @@
     </p>
   </div>
   <!--Div for topic 3 to separate it as a sub-headline-->
-  <div>
+  <div class=topic>
     <h3>Topic 3: Cascading Style Sheets(CSS)</h3>
-    <h4>Date: 2017 October 10</h4>
+    <h4>Date: 2017 October 12</h4>
   </div>
+  <!--Div for sub-topics-->
   <div>
-    <h4>Adding Style</h4>
+    <h4 class=sub-topic>Adding Style</h4>
     <p>
       CSS describes the look and formatting of HTML. It can add color and additional style.
+    </p>
+  </div>
+  <!--Div for sub-topics-->
+  <div>
+    <h4 class=sub-topic>Follows Order</h4>
+    <!--Explain how style is applied.-->
+    <p>
+      CSS is applied in the following order, and as you go further down the list the CSS will override the previous styles. <br>
+      <ol>
+        <li>Browser's default style</li>
+        <li>Separate file's stylesheet</li>
+        <li>HTML contains stylesheet</li>
+        <li>HTML element has inline style</li>
+      </ol>
+    </p>
+  </div>
+  <!--Div for sub-topics-->
+  <div>
+    <h4 class=sub-topic>A Cascading Waterfall</h4>
+    <!--Explain cascading.-->
+    <p>
+      Styles apply from parent element to child elements "cascading" like a waterfall.
     </p>
   </div>
 </body>

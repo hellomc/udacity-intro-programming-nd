@@ -1,0 +1,25 @@
+/*Styling for adea-notes-html.html*/
+/*Add background color to entire web page.*/
+body {
+  background-color: rgb(197,198,199);
+}
+
+/*Add background color, create solid left border, and create round border for main topic of notes*/
+#headline {
+  background-color: rgb(152,180,212);
+  border-left: 5px solid rgb(0,75,141);
+  border-radius: 10px;
+}
+
+/*Create solid light blue borders around topic titles*/
+.topic {
+  border-color: rgb(152,180,212);
+  border-style: solid;
+  text-align: center;
+}
+
+/*Create dotted light blue borders around sub-topic titles*/
+.sub-topic {
+  border-color: rgb(152,180,212);
+  border-style: dotted;
+}
