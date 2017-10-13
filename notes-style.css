@@ -1,0 +1,46 @@
+/*Styling for adea-notes-html.html
+Used https://www.pantone.com/color-finder to find rgb values.*/
+
+/* Checks alignment and order of divs
+* {
+  margin: 10px;
+  border: red solid 2px;
+}
+*/
+
+/*Add background color to entire web page.*/
+body {
+  background-color: rgb(197,198,199);
+}
+
+/*Add background color, create solid left border, and create round border for main topic of notes*/
+#headline {
+  background-color: rgb(152,180,212);
+  border-left: 5px solid rgb(0,75,141);
+  border-right: 5px solid rgb(0,75,141);
+}
+
+/*Create solid blue borders around topic titles*/
+.topic {
+  border-color: rgb(0,75,141);
+  border-style: solid;
+  text-align: center;
+}
+
+/*Create dotted light blue borders around sub-topic titles*/
+.sub-topic {
+  border-left: 5px dashed rgb(0,139,204);
+}
+
+.notes {
+  background-color: rgb(152,180,212);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px;
+}
+
+.dom-img {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
