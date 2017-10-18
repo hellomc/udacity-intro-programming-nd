@@ -1,39 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Michelle Adea's HTML Notes</title>
+  <meta charset="utf-8">
+  <title>Michelle's Udacity Notes - HTML and CSS</title>
+  <link rel="stylesheet" href="notes-style.css">
+  <!--These are high-level notes for the HTML & CSS lessons of Udacity's Intro to Programming Nanodegree (IPND)-->
 </head>
 
 <body>
-  <div>
-    <h1>Udacity Notes</h1>
-    <h2>2017 October 4</h2>
-  </div>
-  <div>
-    <h3>Understanding Basics of Technology/Web</h3>
-    <h4>Types of files used on the web:</h4>
-    <ul>
-     <li>Plain Text</li>
-     <li>HTML</li>
-     <li>Images</li>
-     <li>Videos</li>
-     <li>Music</li>
-    </ul>
-    <h4>Web Components</h4>
-    <p>
-     <b>HTML (<em>HyperText Markup Language</em>)</b> = establishes content on web pages<br>
-     <b>HTTP (<em>HyperText Transfer Protocol</em>)</b> = the web uses this as a main protocol<br>
-     <b>Servers</b> = devices that host the files that are found on the web<br>
-     <b>Internet</b> = world's largest computer network<br>
-     <b>Browser</b> = software application that runs on computer to display files found on web
-    </p>
-  </div>
-  <div>
-    <h3>HTML Fundamentals</h3>
-    <p>
-      Typically, HTML elements will have an <b>opening</b> and <b>closing</b> tag with content in between the tags.<br>
-      Some HTML elements will contain one or more <b>attributes</b> in the opening tag that indicate other characteristics of the HTML element.
-    </p>
-  </div>
+  <!--Header for notes-->
+  <header>
+    <div id="headline">
+      <h1>Udacity Intro to Programming Nanodegree Notes</h1>
+    </div>
+    <!--Linked navigation to different topics of notes-->
+    <div>
+      <ol>
+        <li><a href="#webbasics">Understanding Basics of Technology/Web</a></li>
+        <li><a href="#dom">How to Create a Structured Document using HTML</a></li>
+        <li><a href="#css">Cascading Style Sheets(CSS)</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <!--Start using section and divs to split up topics and sub-topics-->
+
+  <!--Section separates Topic 1 Web Basics-->
+  <section id="webbasics" class="notes">
+    <!--Div separates section's topic-->
+    <div class="topic">
+      <h3>Topic 1: Understanding Basics of Technology/Web</h3>
+      <h4>Date: 2017 October 4</h4>
+    </div>
+    <!--Div for sub-topic "How does the Web Work?"-->
+    <div>
+      <h4 class="sub-topic">How does the Web Work?</h4>
+      <!--Describe how the web works-->
+      <p>
+        The user accesses the web by opening the <b>browser</b>, a software application that runs on computers. This application will display various files (i.e. plain text, <b>HTML</b> (hypertext markup language), images, videos, and music).
+      </p>
+      <p>
+        These files are hosted in <b>servers</b>. When a user types into the browser a website, such as www.bbc.com, the computer sends an <b>HTTP</b> (hypertext transfer protocol) to a server. Then the server locates the specific HTML document and sends it back to the user's computer.
+      </p>
+    </div>
+    <!--Div for sub-topic "HTML Fundamentals"-->
+    <div>
+      <h4 class="sub-topic">HTML Fundamentals</h4>
+      <!--Describe HTML basics-->
+      <p>
+        Typically, HTML elements will have an <b>opening</b> and <b>closing</b> tag with content in between the tags.<br>
+        Some HTML elements will contain one or more <b>attributes</b> in the opening tag that indicate other characteristics of the HTML element.
+      </p>
+      <p>
+        The <span>HTML</span> elements are either <b>inline</b> or <b>block</b>. <b>Inline</b> elements are containers that remain within the same line. <b>Block</b> elements create an invisible box around its inside content. Span and div tags are respectively inline and block elements. As seen in this paragraph, the HTML text is within a span tag and can be stylized differently from the rest of the text. The entire Topic 1 section is within a div tag that is stylized with a light blue background.
+      </p>
+    </div>
+  </section>
+
+  <!--Section to separate Topic 2 DOM-->
+  <section id="dom" class="notes">
+    <!--Div separates section's topic-->
+    <div class="topic">
+      <h3>Topic 2: How to Create a Structured Document using HTML</h3>
+      <h4>Date: 2017 October 9</h4>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">Find Developer Tools in Browser</h4>
+      <!--Explain how to use developer tools-->
+      <p>
+        In the Google Chrome browser, you can open the developer tool, by selecting <em>View</em> from the toolbar. On View's drop-down, select <em>Developer</em> and pick the <em>Developer Tools</em> option.
+      </p>
+      <p>
+        The shortcut is to right click the web page on the Chrome browser and select <em>Inspect</em> from the drop-down. The developer tools will open within the browser.
+      </p>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">Document Structure Imitates Tree</h4>
+      <div class="dom-img">
+        <img src="http://images.slideplayer.com/25/8165337/slides/slide_40.jpg" alt="PowerPoint slide on HTML DOM displaying different HTML elements in tree structure" height="300" width="350">
+      </div>
+      <!--Explain how HTML is organized in the DOM tree structure-->
+      <p>
+        HTML is organized in a <b>Document Object Model(DOM)</b> tree. This tree structure can be applied to multiple languages and across platforms to represent and interact with objects in HTML (and other markup languages).
+      </p>
+      <p>
+        Indenting in HTML indicates the persistence of a single idea. At the beginning of an idea, the indentation increases and towards the end the indentation decreases.
+      </p>
+    </div>
+  </section>
+
+  <!--Section to separate Topic 3 CSS-->
+  <section id="css" class="notes">
+    <!--Div separates section's topic-->
+    <div class="topic">
+      <h3>Topic 3: Cascading Style Sheets(CSS)</h3>
+      <h4>Date: 2017 October 12</h4>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">Adding Style</h4>
+      <!--Explain what CSS does-->
+      <p>
+        CSS describes the look and formatting of HTML. It can add color and additional style.
+      </p>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">Follows Order</h4>
+      <!--Explain how style is applied.-->
+      <p>
+        CSS is applied in the following order, and as you go further down the list the CSS will override the previous styles.
+      </p>
+      <ol>
+        <li>Browser's default style</li>
+        <li>Separate file's stylesheet</li>
+        <li>HTML contains stylesheet</li>
+        <li>HTML element has inline style</li>
+      </ol>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">A Cascading Waterfall</h4>
+      <!--Explain cascading.-->
+      <p>
+        Styles apply from parent element to child elements "cascading" like a waterfall.
+      </p>
+    </div>
+    <!--Div for sub-topics-->
+    <div>
+      <h4 class="sub-topic">Selectors</h4>
+      <!--Explain selectors-->
+      <p>
+        CSS selectors determine which elements the CSS rules will apply to. It can be an HTML tag such as header, section, div, p, h1, etc. It can also be a class attribute that would be denoted with a period(.) or an id attribute denoted with a hashtag(#).
+      </p>
+    </div>
+  </section>
+
+  <!--Section to separate References -->
+  <section id=references class="notes">
+    <!--Div separates section's topic-->
+    <div class="topic">
+      <h3>References</h3>
+    </div>
+    <div>
+      <p>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5 Resource</a><br>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS Resource</a><br>
+        <a href="https://validator.w3.org/" target="_blank">HTML Validator</a><br>
+        <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a><br>
+      </p>
+    </div>
+  </section>
 </body>
+
 </html>
