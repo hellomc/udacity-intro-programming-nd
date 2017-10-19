@@ -4,63 +4,75 @@ Used https://www.pantone.com/color-finder to find rgb values.*/
 /* Checks alignment and order of divs
 * {
   margin: 10px;
-  border: red solid 2px;
+  border: #f93822 solid 2px;
 }
 */
 
+/*Entire Page*/
 /*Add background color to entire web page.*/
 body {
-  background-color: rgb(197,198,199);
+  background-color: #dad9d6;
+  font-family: "Source Serif Pro", serif;
 }
 
-/*Demonstrating use of span as an inline element around text HTML*/
-section div p span {
-  color: orange;
-}
-/*Styling hyperlinks*/
-/*Unvisited link*/
+/*Hyperlinks*/
+/*Unvisited link displayed blue*/
 a:link {
-  color: blue;
+  color: #10069f;
 }
-/*Visited link*/
+
+/*Visited link displayed green*/
 a:visited {
-  color: green;
+  color: #329e31;
 }
-/*Hover over the link*/
+
+/*Hovering over the link displayed purple*/
 a:hover {
-  color: purple;
+  color: #8f1a95;
 }
 
-/*Add background color, create solid left border, and create round border for main topic of notes*/
+/*Header*/
+/*For id="headline", add background color, create solid border, and create round border for main topic of notes*/
 #headline {
-  background-color: rgb(152,180,212);
-  border-left: 5px solid rgb(0,75,141);
-  border-right: 5px solid rgb(0,75,141);
+  background-color: #aad3e8;
+  border: 5px solid #006ebc;
+  border-radius: 5px;
 }
 
-/*Create solid blue borders around topic titles*/
-.topic {
-  border-color: rgb(0,75,141);
-  border-style: solid;
-  text-align: center;
+/*Content*/
+/*For id="highlight", change text to color orange. This demonstrates use of span as an inline element around text HTML.*/
+#highlight {
+  color: #ff6d00;
 }
 
-/*Create dotted light blue borders around sub-topic titles*/
-.sub-topic {
-  border-left: 5px dashed rgb(0,139,204);
-}
-
-/*Create background and rounded border*/
+/*For class="notes", create background and rounded border for each section*/
 .notes {
-  background-color: rgb(152,180,212);
+  background-color: #aad3e8;
   border-radius: 10px;
   margin: 8px;
   padding: 10px;
 }
 
+/*For class="topic", create solid blue borders around topic titles*/
+.topic {
+  border: 5px solid #006ebc;
+  text-align: center;
+}
+
+/*For class="sub-topic", create light blue left border on sub-topic titles*/
+.sub-topic {
+  border-left: 5px solid #006ebc;
+}
+
 /*Formatting image to stay to left*/
-.dom-img {
+.dom-tree {
   margin: 0;
   padding: 0;
   text-align: left;
+}
+
+/*Content: References*/
+/*Removing bullets from unordered list*/
+ul {
+  list-style-type: none;
 }

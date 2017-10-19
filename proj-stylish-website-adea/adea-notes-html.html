@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<!--Language attribute specifies the language of the webpage and is used by search machines.-->
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Michelle's Udacity Notes - HTML and CSS</title>
   <link rel="stylesheet" href="notes-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
   <!--These are high-level notes for the HTML & CSS lessons of Udacity's Intro to Programming Nanodegree (IPND)-->
 </head>
 
@@ -31,12 +33,12 @@
   <section id="webbasics" class="notes">
     <!--Div separates section's topic-->
     <div class="topic">
-      <h3>Topic 1: Understanding Basics of Technology/Web</h3>
-      <h4>Date: 2017 October 4</h4>
+      <h2>Topic 1: Understanding Basics of Technology/Web</h2>
+      <p>Date: 2017 October 4</p>
     </div>
     <!--Div for sub-topic "How does the Web Work?"-->
     <div>
-      <h4 class="sub-topic">How does the Web Work?</h4>
+      <h3 class="sub-topic">How does the Web Work?</h3>
       <!--Describe how the web works-->
       <p>
         The user accesses the web by opening the <b>browser</b>, a software application that runs on computers. This application will display various files (i.e. plain text, <b>HTML</b> (hypertext markup language), images, videos, and music).
@@ -47,14 +49,14 @@
     </div>
     <!--Div for sub-topic "HTML Fundamentals"-->
     <div>
-      <h4 class="sub-topic">HTML Fundamentals</h4>
+      <h3 class="sub-topic">HTML Fundamentals</h3>
       <!--Describe HTML basics-->
       <p>
         Typically, HTML elements will have an <b>opening</b> and <b>closing</b> tag with content in between the tags.<br>
         Some HTML elements will contain one or more <b>attributes</b> in the opening tag that indicate other characteristics of the HTML element.
       </p>
       <p>
-        The <span>HTML</span> elements are either <b>inline</b> or <b>block</b>. <b>Inline</b> elements are containers that remain within the same line. <b>Block</b> elements create an invisible box around its inside content. Span and div tags are respectively inline and block elements. As seen in this paragraph, the HTML text is within a span tag and can be stylized differently from the rest of the text. The entire Topic 1 section is within a div tag that is stylized with a light blue background.
+        The <span id="highlight">HTML</span> elements are either <b>inline</b> or <b>block</b>. <b>Inline</b> elements are containers that remain within the same line. <b>Block</b> elements create an invisible box around its inside content. Span and div tags are respectively inline and block elements. As seen in this paragraph, the HTML text is within a span tag and can be stylized differently from the rest of the text. The entire Topic 1 section is within a div tag that is stylized with a light blue background.
       </p>
     </div>
   </section>
@@ -63,12 +65,12 @@
   <section id="dom" class="notes">
     <!--Div separates section's topic-->
     <div class="topic">
-      <h3>Topic 2: How to Create a Structured Document using HTML</h3>
-      <h4>Date: 2017 October 9</h4>
+      <h2>Topic 2: How to Create a Structured Document using HTML</h2>
+      <p>Date: 2017 October 9</p>
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">Find Developer Tools in Browser</h4>
+      <h3 class="sub-topic">Find Developer Tools in Browser</h3>
       <!--Explain how to use developer tools-->
       <p>
         In the Google Chrome browser, you can open the developer tool, by selecting <em>View</em> from the toolbar. On View's drop-down, select <em>Developer</em> and pick the <em>Developer Tools</em> option.
@@ -79,8 +81,8 @@
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">Document Structure Imitates Tree</h4>
-      <div class="dom-img">
+      <h3 class="sub-topic">Document Structure Imitates Tree</h3>
+      <div class="dom-tree">
         <img src="http://images.slideplayer.com/25/8165337/slides/slide_40.jpg" alt="PowerPoint slide on HTML DOM displaying different HTML elements in tree structure" height="300" width="350">
       </div>
       <!--Explain how HTML is organized in the DOM tree structure-->
@@ -97,12 +99,12 @@
   <section id="css" class="notes">
     <!--Div separates section's topic-->
     <div class="topic">
-      <h3>Topic 3: Cascading Style Sheets(CSS)</h3>
-      <h4>Date: 2017 October 12</h4>
+      <h2>Topic 3: Cascading Style Sheets(CSS)</h2>
+      <p>Date: 2017 October 12</p>
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">Adding Style</h4>
+      <h3 class="sub-topic">Adding Style</h3>
       <!--Explain what CSS does-->
       <p>
         CSS describes the look and formatting of HTML. It can add color and additional style.
@@ -110,7 +112,7 @@
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">Follows Order</h4>
+      <h3 class="sub-topic">Follows Order</h3>
       <!--Explain how style is applied.-->
       <p>
         CSS is applied in the following order, and as you go further down the list the CSS will override the previous styles.
@@ -124,7 +126,7 @@
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">A Cascading Waterfall</h4>
+      <h3 class="sub-topic">A Cascading Waterfall</h3>
       <!--Explain cascading.-->
       <p>
         Styles apply from parent element to child elements "cascading" like a waterfall.
@@ -132,7 +134,7 @@
     </div>
     <!--Div for sub-topics-->
     <div>
-      <h4 class="sub-topic">Selectors</h4>
+      <h3 class="sub-topic">Selectors</h3>
       <!--Explain selectors-->
       <p>
         CSS selectors determine which elements the CSS rules will apply to. It can be an HTML tag such as header, section, div, p, h1, etc. It can also be a class attribute that would be denoted with a period(.) or an id attribute denoted with a hashtag(#).
@@ -144,15 +146,15 @@
   <section id=references class="notes">
     <!--Div separates section's topic-->
     <div class="topic">
-      <h3>References</h3>
+      <h2>References</h2>
     </div>
     <div>
-      <p>
-        <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5 Resource</a><br>
-        <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS Resource</a><br>
-        <a href="https://validator.w3.org/" target="_blank">HTML Validator</a><br>
-        <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a><br>
-      </p>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5 Resource</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS Resource</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+      </ul>
     </div>
   </section>
 </body>
